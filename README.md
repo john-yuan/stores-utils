@@ -16,6 +16,7 @@ if (!isArray(it)) {
 
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
+* [isPlainObject(it)](#isplainobjectit)
 
 ## API
 
@@ -32,3 +33,11 @@ Check whether the variable is an instance of `Array`. Returns `true` if the vari
 * Returns: {boolean}
 
 Check whether the variable is a function. Returns `true` if the variable is a function, otherwise `false` is returned.
+
+
+### isPlainObject(it)
+
+* `it` {any}
+* Returns: {boolean}
+
+Check whether the variable is a plain object. Returns `true` if the variable is a plain object, otherwise `false` is returned.
