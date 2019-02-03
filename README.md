@@ -17,6 +17,7 @@ if (!isArray(it)) {
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
+* [merge(target, ...source)](#mergetargetource)
 
 ## API
 
@@ -41,3 +42,10 @@ Check whether the variable is a function. Returns `true` if the variable is a fu
 * Returns: {boolean}
 
 Check whether the variable is a plain object. Returns `true` if the variable is a plain object, otherwise `false` is returned.
+
+### merge(target, ...source)
+
+* `target` {Object}
+* `source` {Object}
+
+Copy any non-undefined values of source to target and overwrites the corresponding original values. This function will modify the target object. Returns the modified target object.
