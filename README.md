@@ -15,6 +15,7 @@ if (!isArray(it)) {
 ## Modules
 
 * [isArray(it)](#isarrayit)
+* [isFunction(it)](#isfunctionit)
 
 ## API
 
@@ -24,3 +25,10 @@ if (!isArray(it)) {
 * Returns: {boolean}
 
 Check whether the variable is an instance of `Array`. Returns `true` if the variable is an instance of `Array`, otherwise `false` is returned.
+
+### isFunction(it)
+
+* `it` {any}
+* Returns: {boolean}
+
+Check whether the variable is a function. Returns `true` if the variable is a function, otherwise `false` is returned.
