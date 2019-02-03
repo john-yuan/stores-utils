@@ -17,7 +17,7 @@ if (!isArray(it)) {
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
-* [merge(target, ...source)](#mergetargetource)
+* [merge(target, ...source)](#mergetarget-source)
 
 ## API
 
