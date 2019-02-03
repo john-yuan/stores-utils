@@ -1,0 +1,1 @@
+exports.isArray = require('./isArray');
