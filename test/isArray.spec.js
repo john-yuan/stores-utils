@@ -1,7 +1,12 @@
 var assert = require('assert');
+var index = require('../index');
 var isArray = require('../isArray');
 
 describe('isArray', function () {
+    it('isArray is mounted on index', function () {
+        assert.deepStrictEqual(index.isArray, isArray);
+    });
+
     it("[] is array", function () {
         assert.deepStrictEqual(true, isArray([]));
     });
