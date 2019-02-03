@@ -47,5 +47,6 @@ Check whether the variable is a plain object. Returns `true` if the variable is 
 
 * `target` {Object}
 * `source` {Object}
+* Returns: {Object}
 
 Copy any non-undefined values of source to target and overwrites the corresponding original values. This function will modify the target object. Returns the modified target object.
