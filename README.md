@@ -12,6 +12,12 @@ if (!isArray(it)) {
 }
 ```
 
+## Install
+
+```bash
+npm i @john-yuan/utils
+```
+
 ## Modules
 
 * [isArray(it)](#isarrayit)
