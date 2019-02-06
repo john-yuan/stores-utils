@@ -18,6 +18,7 @@ if (!isArray(it)) {
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
 * [merge(target, ...source)](#mergetarget-source)
+* [trim(str)](#trimstr)
 
 ## API
 
@@ -50,3 +51,10 @@ Check whether the variable is a plain object. Returns `true` if the variable is 
 * Returns: {Object}
 
 Copy any non-undefined values of source to target and overwrites the corresponding original values. This function will modify the target object. Returns the modified target object.
+
+### trim(str)
+
+* `str` {string}
+* Returns: {string}
+
+Removes the leading and trailing white space and line terminator characters from a string. If `str` is `null` or `undefined`, it is treated as an empty string. If `str` is not a string, it will be converted to a string first. This function retruns the trimed string.
