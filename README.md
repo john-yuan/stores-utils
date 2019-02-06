@@ -1,11 +1,11 @@
 # Basic Utils for JavaScript
 
-[![Build Status](https://travis-ci.org/john-yuan/stores-utils.svg?branch=master)](https://travis-ci.org/john-yuan/stores-utils)
+[![Build Status](https://travis-ci.org/john-yuan/utils.svg?branch=master)](https://travis-ci.org/john-yuan/utils)
 
 The basic utils for javascript. This library will keep the utils as small as possible. You can import the module you want to use on demand. Here is an example:
 
 ```js
-var isArray = require('@stores/utils/isArray');
+var isArray = require('@john-yuan/utils/isArray');
 
 if (!isArray(it)) {
     throw new TypeError('it is not an array');
