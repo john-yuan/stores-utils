@@ -20,6 +20,7 @@ npm i @john-yuan/utils
 
 ## Modules
 
+* [isAbsoluteURL(it)](#isabsoluteurlurl)
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
@@ -27,6 +28,13 @@ npm i @john-yuan/utils
 * [trim(str)](#trimstr)
 
 ## API
+
+### isAbsoluteURL(url)
+
+* `url` {string}
+* Returns: {boolean}
+
+Check whether the url is absolute url. Returns `true` if the url is abosolute, otherwise `false` is returned.
 
 ### isArray(it)
 
