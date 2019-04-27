@@ -20,7 +20,7 @@ npm i @john-yuan/utils
 
 ## Modules
 
-* [isAbsoluteURL(it)](#isabsoluteurlurl)
+* [isAbsoluteURL(url)](#isabsoluteurlurl)
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
