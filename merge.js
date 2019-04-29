@@ -46,7 +46,7 @@ var extend = function (target, source) {
  *
  * @param {Object} target The target object
  * @param {...Object} args The source object
- * @returns {Object} RReturns the modified target object
+ * @returns {Object} Returns the modified target object
  */
 var merge = function (target, args) {
     var i = 0;
