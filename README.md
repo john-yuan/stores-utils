@@ -5,7 +5,7 @@
 The basic utils for javascript. This library will keep the utils as small as possible. You can import the module you want to use on demand. Here is an example:
 
 ```js
-var isArray = require('@john-yuan/utils/isArray');
+var isArray = require('x-common-utils/isArray');
 
 if (!isArray(it)) {
     throw new TypeError('it is not an array');
@@ -15,7 +15,7 @@ if (!isArray(it)) {
 ## Install
 
 ```bash
-npm i @john-yuan/utils
+npm i x-common-utils
 ```
 
 ## Modules
