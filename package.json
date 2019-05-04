@@ -12,7 +12,8 @@
   },
   "keywords": [
     "utils",
-    "commons"
+    "commons",
+    "helpers"
   ],
   "author": "JOHN YUAN",
   "license": "MIT",
