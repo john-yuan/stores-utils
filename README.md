@@ -25,6 +25,7 @@ npm i x-common-utils
 * [isFunction(it)](#isfunctionit)
 * [isPlainObject(it)](#isplainobjectit)
 * [merge(target, ...source)](#mergetarget-source)
+* [normalizePath(path)](#normalizepathpath)
 * [trim(str)](#trimstr)
 
 ## API
@@ -65,6 +66,17 @@ Check whether the variable is a plain object. Returns `true` if the variable is 
 * Returns: {Object}
 
 Copy any non-undefined values of source to target and overwrites the corresponding original values. This function will modify the target object. Returns the modified target object.
+
+### normalizePath(path)
+
+* `path` {string}
+* Retruns: {string}
+
+Normalize the given path, parse the `.` and `..` in the path. This function only supports the separator `/`. Example:
+
+```js
+var path = normalizePath('./a/b0/../b/c'); // path === 'a/b/c'
+```
 
 ### trim(str)
 
