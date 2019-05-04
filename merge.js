@@ -11,7 +11,7 @@ var slice = Array.prototype.slice;
  * @param {Object.<string, *>|any[]} source The source object or array
  * @returns {Object.<string, *>|any[]} Returns the extended target object or array
  */
-var extend = function (target, source) {
+function extend(target, source) {
     var key, val;
 
     if ( target && ( isArray(source) || isPlainObject(source) ) ) {
@@ -38,7 +38,7 @@ var extend = function (target, source) {
     }
 
     return target;
-};
+}
 
 /**
  * Copy any non-undefined values of source to target and overwrites the corresponding original values. This function
@@ -48,7 +48,7 @@ var extend = function (target, source) {
  * @param {...Object} args The source object
  * @returns {Object} Returns the modified target object
  */
-var merge = function (target, args) {
+function merge(target, args) {
     var i = 0;
     var l = arguments.length - 1;
 
@@ -59,6 +59,6 @@ var merge = function (target, args) {
     }
 
     return target;
-};
+}
 
 module.exports = merge;

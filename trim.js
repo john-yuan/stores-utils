@@ -4,9 +4,9 @@
  * @param {string} str
  * @returns {string}
  */
-var _trimUsingPrototype = function (str) {
+function _trimUsingPrototype(str) {
     return str.trim();
-};
+}
 
 /**
  * Trim using RegExp
@@ -14,9 +14,9 @@ var _trimUsingPrototype = function (str) {
  * @param {string} str
  * @returns {string}
  */
-var _trimUsingRegExp = function (str) {
+function _trimUsingRegExp(str) {
     return str.replace(/^\s+/, '').replace(/\s+$/, '');
-};
+}
 
 /**
  * Removes the leading and trailing white space and line terminator characters from a string
@@ -24,7 +24,7 @@ var _trimUsingRegExp = function (str) {
  * @param {string} str
  * @returns {string}
  */
-var _trim = function (str) {
+function _trim(str) {
     if (typeof str.trim === 'function') {
         _trim = _trimUsingPrototype;
     } else {
@@ -32,7 +32,7 @@ var _trim = function (str) {
     }
 
     return _trim(str);
-};
+}
 
 /**
  * Removes the leading and trailing white space and line terminator characters from a string. If `str` is `null` or
@@ -41,7 +41,7 @@ var _trim = function (str) {
  * @param {string} str The string to be trimed
  * @returns {string} Returns the trimed string
  */
-var trim = function (str) {
+function trim(str) {
     if (typeof str !== 'string') {
         if (str === null || str === undefined) {
             return '';
@@ -50,7 +50,7 @@ var trim = function (str) {
         }
     }
     return _trim(str);
-};
+}
 
 // This for testing
 trim._trimUsingPrototype = _trimUsingPrototype;

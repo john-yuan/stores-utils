@@ -6,7 +6,7 @@ var toString = Object.prototype.toString;
  * @param {any} it The variable to check
  * @returns {boolean} Returns `true` if the variable is a plain object, otherwise `false` is returned
  */
-var isPlainObject = function (it) {
+function isPlainObject(it) {
     if (!it) {
         return false;
     }
@@ -20,6 +20,6 @@ var isPlainObject = function (it) {
     }
 
     return toString.call(it) === '[object Object]';
-};
+}
 
 module.exports = isPlainObject;
