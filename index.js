@@ -1,3 +1,4 @@
+exports.each = require('./each');
 exports.isAbsoluteURL = require('./isAbsoluteURL');
 exports.isArray = require('./isArray');
 exports.isFunction = require('./isFunction');

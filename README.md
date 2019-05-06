@@ -24,6 +24,7 @@ npm i x-common-utils
 
 ## Modules
 
+* [each(target, callback)](#eachtarget-callback)
 * [isAbsoluteURL(url)](#isabsoluteurlurl)
 * [isArray(it)](#isarrayit)
 * [isFunction(it)](#isfunctionit)
@@ -34,6 +35,17 @@ npm i x-common-utils
 * [trim(str)](#trimstr)
 
 ## API
+
+### each(target, callback)
+
+* `target` {Array|Object}
+* `callback` {IteratorFunction}
+
+Call the `callback` function on each element or property of the `target` array or object. If the `target` is an
+array, the elements of that array will be iterated from `0` to the end of the array. If the `target` is an object,
+all the properties of that object will be iterated (the order is not promised). Pay attention that the properties of
+the `prototype` of the `target` is **NOT** iterated. The parameters passed to the `callback` function is
+`(value, index|key, target)`. If the `callback` function returns `false`, the procession will be stopped.
 
 ### isAbsoluteURL(url)
 
