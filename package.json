@@ -1,6 +1,6 @@
 {
   "name": "x-common-utils",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "A lightweight common utils library.",
   "main": "index.js",
   "scripts": {
