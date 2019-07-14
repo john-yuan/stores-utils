@@ -95,7 +95,7 @@ modify the target object. Returns the modified target object.
 Normalize the given path, parse the `.` and `..` in the path. This function only supports the separator `/`. Example:
 
 ```js
-var path = normalizePath('./a/b0/../b/c'); // path === 'a/b/c'
+var path = normalizePath('./a/b/../b/c'); // path === 'a/b/c'
 ```
 
 ### readAsString(value)
