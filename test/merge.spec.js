@@ -117,4 +117,40 @@ describe('merge', function () {
         assert.deepStrictEqual(null, target.b.g);
         assert.deepStrictEqual(null, target.b.h);
     });
+
+    it('should copy instance of user dinfined class', function () {
+        function MyClass(no) {
+            this.no = no;
+        }
+
+        MyClass.prototype.test = function () {
+            return 'success';
+        };
+
+        var c1 = new MyClass(1);
+        var res = merge({}, { c1: c1 });
+
+        assert.deepStrictEqual(res.c1.no, 1);
+        assert.deepStrictEqual(res.c1.test(), 'success');
+        assert.deepStrictEqual(res.c1 instanceof MyClass, true);
+    });
+
+    it('should copy instance of user dinfined class (prototype overwritten)', function () {
+        function MyClass(no) {
+            this.no = no;
+        }
+
+        MyClass.prototype = {
+            test: function () {
+                return 'success';
+            }
+        };
+
+        var c1 = new MyClass(1);
+        var res = merge({}, { c1: c1 });
+
+        assert.deepStrictEqual(res.c1.no, 1);
+        assert.deepStrictEqual(res.c1.test(), 'success');
+        assert.deepStrictEqual(res.c1 instanceof MyClass, true);
+    });
 });

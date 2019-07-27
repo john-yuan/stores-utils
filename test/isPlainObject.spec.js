@@ -57,4 +57,20 @@ describe('isPlainObject', function () {
     it('date is not plain object', function () {
         assert.deepStrictEqual(false, isPlainObject(new Date()));
     });
+
+    it('instance of a class is not plain object', function () {
+        var MyClass = function () {};
+        var instance = new MyClass();
+        assert.deepStrictEqual(false, isPlainObject(instance));
+    });
+
+    it('instance of a class (prototype overwritten) is not plain object', function () {
+        var MyClass = function () {};
+
+        MyClass.prototype = {};
+
+        var instance = new MyClass();
+
+        assert.deepStrictEqual(false, isPlainObject(instance));
+    });
 });

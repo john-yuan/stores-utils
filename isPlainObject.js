@@ -1,4 +1,11 @@
 var toString = Object.prototype.toString;
+var getPrototypeOf = Object.getPrototypeOf;
+
+if (!getPrototypeOf) {
+    getPrototypeOf = function (object) {
+        return object.__proto__;
+    };
+}
 
 /**
  * Check whether the variable is a plain object.
@@ -7,19 +14,15 @@ var toString = Object.prototype.toString;
  * @returns {boolean} Returns `true` if the variable is a plain object, otherwise `false` is returned
  */
 function isPlainObject(it) {
-    if (!it) {
+    if (toString.call(it) !== '[object Object]') {
         return false;
     }
 
-    if (typeof window !== 'undefined' && it === window) {
+    if (getPrototypeOf(it) !== getPrototypeOf({})) {
         return false;
     }
 
-    if (typeof global !== 'undefined' && it === global) {
-        return false;
-    }
-
-    return toString.call(it) === '[object Object]';
+    return true;
 }
 
 module.exports = isPlainObject;
