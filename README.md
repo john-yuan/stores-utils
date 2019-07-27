@@ -1,4 +1,4 @@
-# Basic Utils for JavaScript
+# Common Utils for JavaScript
 
 [![npm version](https://img.shields.io/npm/v/x-common-utils.svg)](https://www.npmjs.com/package/x-common-utils)
 [![Build Status](https://travis-ci.org/john-yuan/utils.svg?branch=master)](https://travis-ci.org/john-yuan/utils)
@@ -6,7 +6,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/x-common-utils.svg)](http://npm-stat.com/charts.html?package=x-common-utils)
 
 The basic utils for javascript. This library will keep the utils as small as possible. You can import the module you
-want to use on demand. Here is an example:
+want to use on demand. Here is an example.
 
 ```js
 var isArray = require('x-common-utils/isArray');
