@@ -14,11 +14,20 @@ if (!getPrototypeOf) {
  * @returns {boolean} Returns `true` if the variable is a plain object, otherwise `false` is returned
  */
 function isPlainObject(it) {
+    var proto;
+
     if (toString.call(it) !== '[object Object]') {
         return false;
     }
 
-    if (getPrototypeOf(it) !== getPrototypeOf({})) {
+    proto = getPrototypeOf(it);
+
+    // Object.create(null)
+    if (!proto) {
+        return true;
+    }
+
+    if (proto !== getPrototypeOf({})) {
         return false;
     }
 

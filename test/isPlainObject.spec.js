@@ -73,4 +73,9 @@ describe('isPlainObject', function () {
 
         assert.deepStrictEqual(false, isPlainObject(instance));
     });
+
+    it('Object.create(null) is plain object', function () {
+        var object = Object.create(null);
+        assert.deepStrictEqual(true, isPlainObject(object));
+    });
 });
